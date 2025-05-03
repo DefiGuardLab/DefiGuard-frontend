@@ -14,6 +14,7 @@ DefiGuard allows users to:
 Adapted for the Starknet ecosystem, DefiGuard offers protocol-level cover with transparent risk allocation and onchain claims handling.
 
 
+
 ## **🌍 Ecosystem & Integrations**
 * Starknet – scalable L2 for all smart contracts
 * Chainlink (planned) – for pricing feeds and protocol metrics
