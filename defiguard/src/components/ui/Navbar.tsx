@@ -12,7 +12,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="flex items-center justify-between px-4 sm:px-6 py-4 w-full relative">
+    <nav className="flex items-center justify-between px-4 sm:px-6 mt-8 w-full relative">
       {/* Logo */}
       <div className="flex items-center">
         <h1 className="text-white text-lg sm:text-4xl font-bold tracking-wide">DEFI- GUARD</h1>
