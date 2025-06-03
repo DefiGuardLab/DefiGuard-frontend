@@ -54,7 +54,7 @@ export default function Navbar() {
         >
           Log In
         </Button>
-        <Button className="bg-red-500 hover:bg-red-600 text-white text-sm">Sign Up</Button>
+        <Button className="bg-orange-500 hover:bg-orange-600 text-white text-sm">Sign Up</Button>
       </div>
 
       {/* Mobile Menu Button */}
