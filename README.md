@@ -1,58 +1,128 @@
-# 🛡️ DefiGuard
+# Defiguard Frontend
 
-DefiGuard is a decentralized DeFi insurance protocol built on Starknet that enables users to buy smart contract cover for protocols like Aave, Uniswap, Compound, and more.
+> Secure DeFi interactions on Stellar through real-time smart contract risk analysis.
 
-Our mission is to provide trustless, censorship-resistant, and transparent protection for DeFi participants through a pool-based coverage system powered by smart contracts.
+## Overview
 
-## **🔍 Overview**
+Defiguard is a security infrastructure designed to make decentralized finance safer on the Stellar network. The platform allows users to analyze Soroban smart contracts before interacting with them, providing clear insights into potential risks and contract permissions.
 
-DefiGuard allows users to:
+The frontend application provides an intuitive dashboard where users can scan contracts, review security reports, and monitor risk scores of DeFi protocols deployed within the Stellar ecosystem.
 
-- Buy coverage for specific DeFi protocols
-- Receive Policy NFTs that represent their insurance rights
-- Earn passive income by underwriting risk through pool creation
-- Protect against risks like smart contract hacks, oracle failures, and governance attacks
+## Problem Statement
 
-Adapted for the Starknet ecosystem, DefiGuard offers protocol-level cover with transparent risk allocation and onchain claims handling.
+As decentralized finance grows on Stellar, users frequently interact with newly deployed smart contracts whose behavior and security characteristics may not be fully understood.
 
-## **🌍 Ecosystem & Integrations**
+Most users lack the technical expertise to analyze smart contract code, making them vulnerable to malicious contracts, hidden permissions, or poorly designed protocols that could result in financial loss.
 
-- Starknet – scalable L2 for all smart contracts
-- Chainlink (planned) – for pricing feeds and protocol metrics
-- IPFS/Filecoin (planned) – decentralized metadata and file storage
+Defiguard addresses this challenge by providing a user-friendly interface that scans Soroban contracts and presents transparent risk assessments before users execute transactions.
 
-## \*\*🛠 Branch Naming Convention
+## Features
 
-We follow a clear branch naming structure:
-[feat|fix|chore]-[issue-number]-[short-description]
+- Smart contract scanning interface
+- Real-time contract risk scoring
+- Security reports and vulnerability insights
+- Protocol monitoring dashboard
+- Wallet interaction warnings
+- Visual representation of contract permissions
 
-```bash title="Terminal Commands"
-[feat|fix|chore]-[issue-number]-[short-description]
+## Target Users
+
+- DeFi users interacting with new protocols
+- Developers deploying Soroban smart contracts
+- Security researchers
+- Investors evaluating DeFi protocols
+
+## System Architecture
+
+```
+User → Defiguard Frontend → Backend Security Engine → Soroban Smart Contracts → Stellar Blockchain
 ```
 
+## Technology Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend Framework | React / Next.js |
+| Styling | TailwindCSS |
+| Blockchain Integration | Stellar SDK |
+| Wallet Integration | Freighter Wallet |
+| API Communication | REST APIs |
+
+## Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-org/defiguard-frontend.git
 ```
-Examples:
-* feat-12-add-pool-creation
-* fix-07-nft-metadata-bug
-* chore-03-update-deps
+
+Navigate to the project directory:
+
+```bash
+cd defiguard-frontend
 ```
 
-## 🧑🏾‍💻 Contributing
+Install dependencies:
 
-We welcome contributions from Cairo developers, frontend engineers, and Web3 designers!
-To get started:
+```bash
+npm install
+```
 
-1. Read open issues marked good first issue
-1. Clone the repo
-1. Create a branch using the naming convention
-1. Submit a pull request
+Run the development server:
 
-We’re also live on OnlyDust, so you can earn rewards for building open source insurance infrastructure on Starknet.
+```bash
+npm run dev
+```
 
-## 📜 License
+Application runs at `http://localhost:3000`.
 
-This project is licensed under the MIT License.
+## Usage
 
-## **💬 Community & Support**
+1. Enter a Soroban contract address.
+2. Run a contract security scan.
+3. View the generated risk score and security report.
+4. Make informed decisions before interacting with the contract.
 
-- Join our [Telegram](https://t.me/h2YC0g3Xx_Y5OGZk) for discussions and support.
+## Ecosystem Impact
+
+Defiguard strengthens security across the Stellar DeFi ecosystem by providing transparent and accessible contract risk analysis.
+
+By helping users identify risky contracts before interacting with them, Defiguard contributes to:
+
+- Increased user confidence in decentralized applications
+- Improved smart contract security standards
+- Reduced likelihood of financial loss from malicious protocols
+- Greater transparency across the Stellar DeFi ecosystem
+
+## Roadmap
+
+### Phase 1
+
+- Smart contract scanning dashboard
+- Risk score visualization
+- Backend security integration
+
+### Phase 2
+
+- Wallet transaction risk warnings
+- Real-time contract monitoring
+- Developer security insights
+
+### Phase 3
+
+- Community-driven security reports
+- Integration with major Stellar DeFi platforms
+- Cross-protocol security analytics
+
+## License
+
+MIT License
+
+---
+
+**Built with ❤️ on Stellar**
